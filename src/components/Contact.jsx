@@ -53,7 +53,7 @@ function Contact() {
 
         {/* Contact Form  */}
         <div className="bg-gray-50 rounded-2xl py-8 px-8">
-          <form action="" method="post" className="flex flex-col">
+          <form className="flex flex-col">
             <div className="flex flex-col gap-4 mb-4">
               <label htmlFor="name" className="text-gray-600">
                 Full Name
