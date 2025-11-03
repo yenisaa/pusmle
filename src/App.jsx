@@ -1,4 +1,5 @@
 import AboutUs from "./components/AboutUs.jsx";
+import Contact from "./components/Contact.jsx";
 import FeatureSection from "./components/FeatureSection.jsx";
 import Footer from "./components/Footer.jsx";
 import Hero from "./components/Hero.jsx";
@@ -20,6 +21,7 @@ function App() {
           <WhyChooseUs />
           <PricingPlan />
           <Testimonial />
+          {/* <Contact /> */}
           <Footer />
         </div>
       </main>

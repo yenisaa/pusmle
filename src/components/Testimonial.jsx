@@ -1,8 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import gbenga from "/Gbenga Timileyin.png";
 import Amirat from "/Amirat Salami.png";
-import David from "/David Otega.png";
-import Rachel from "/Rachel Uche David.png";
+
 
 // Import Swiper styles
 import "swiper/css";
