@@ -1,9 +1,12 @@
-import { programs, } from "../data/data";
+import { programs } from "../data/data";
 import { ArrowRight } from "lucide-react";
 
 function FeatureSection() {
   return (
-    <section className="bg-white max-w-7xl mx-auto py-4 px-6 md:px-16">
+    <section
+      className="bg-white w-full mx-auto py-4 px-6 md:px-16"
+      id="courses"
+    >
       <div className="text-center mb-12">
         <p className="text-sm font-medium uppercase text-blue-600">
           Our Programs

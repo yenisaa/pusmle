@@ -2,7 +2,7 @@ import { feature } from "../data/data.js";
 
 function AboutUs() {
   return (
-    <section className="w-full bg-gray-50 py-16 px-4 sm:px-6 md:px8">
+    <section className="w-full bg-gray-50 py-16 px-4 sm:px-6 md:px8" id="about">
       <div className="mx-auto max-w-6xl">
         <div className="grid md:grid-cols-3 grid-cols-1 gap-8">
           {/* Heading Text  */}

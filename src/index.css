@@ -5,3 +5,27 @@ html {
     scroll-padding-top: 100px;
 }
 
+.testimonial-swiper{
+    padding: 20px 0;
+
+
+}
+
+.testimonial-swiper .slider-slide{
+    height: auto;
+}
+
+.testimonial-swiper .swiper-slide-next::after,
+.testimonial-swiper .swiper-slide-prev::after {
+    display: none;
+}
+
+.swiper-slide-next, .swiper-slide-prev{
+    display: none;
+}
+
+.swiper-button-next-custom.swiper-button-disabled,
+.swiper-button-prev-custom.swiper-button-disabled {
+    opacity: 0.1;
+    cursor: not-allowed;
+}

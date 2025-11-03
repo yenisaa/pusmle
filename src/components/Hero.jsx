@@ -5,7 +5,10 @@ import { PhoneCall } from "lucide-react";
 
 function Hero() {
   return (
-    <section className="container flex flex-col md:flex-row justify-between pt-44 mx-auto pb-6 px-4 sm:px-6 lg:px-8 ">
+    <section
+      className="container flex flex-col md:flex-row justify-between pt-44 mx-auto pb-6 px-4 sm:px-6 lg:px-8"
+      id="home"
+    >
       {/* Left Col */}
       <div className="w-full md:w-1/2 space-y-8">
         {/* Bubble */}
@@ -22,7 +25,7 @@ function Hero() {
               Excel in Your USMLE Journey{" "}
               <span className="absolute bottom-0 left-0  w-40  h-1.5 bg-red-200/90"></span>
             </span>
-            with Nigeria's Leading Medical Board Tutors
+            with US Trained Physicians and Seasoned Board Educators
           </h1>
         </div>
         {/* Headline Text */}

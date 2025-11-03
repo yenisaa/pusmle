@@ -3,9 +3,9 @@ import { differentiators } from "../data/data";
 
 function WhyChooseUs() {
   return (
-    <section className="max-w-7xl mx-auto px-4 py-16">
+    <section className="w-full mx-auto px-4 py-16 bg-gray-50">
       {/* heading section  */}
-      <div className="text-center mb-12">
+      <div className="text-center mb-12 max-w-7xl">
         <h2 className="text-4xl font-bold text-gray-900 mb-4">
           Why{" "}
           <span className="bg-linear-to-r from-red-600 to-blue-600 bg-clip-text text-transparent">
