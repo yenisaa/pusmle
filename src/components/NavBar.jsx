@@ -2,12 +2,13 @@ import { useState } from "react";
 import Logo from "/logo.png";
 import { HiMenu, HiX } from "react-icons/hi";
 import { navLinks } from "../data/data";
+import { Link } from "react-router";
 
 function NavBar() {
   // const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeLink, setActiveLink] = useState("#Home");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+ 
   
 
   return (
@@ -38,7 +39,7 @@ function NavBar() {
           className="hidden md:flex items-center gap-10"
           role="navigation links"
         >
-          <ul className="flex gap-10">
+          <ul className="flex  gap-10">
             {navLinks.map((link, indexed) => (
               <a
                 key={indexed}
@@ -58,9 +59,11 @@ function NavBar() {
 
         {/* Call To Action Button */}
         <div className="hidden md:block">
-          <button className=" bg-linear-to-r from-red-600 to-blue-600 text-white px-6 py-2.5 rounded-lg hover:shadow-md hover:shadow-red-200 md:hover:bg-blue-700 transition-all ">
-            Get In Touch
-          </button>
+          
+            <button className=" bg-linear-to-r from-red-600 to-blue-600 text-white px-6 py-2.5 rounded-lg hover:shadow-md hover:shadow-red-200 md:hover:bg-blue-700 transition-all ">
+              Get In Touch
+            </button>
+   
         </div>
       </div>
 

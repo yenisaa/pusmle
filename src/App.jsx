@@ -21,7 +21,7 @@ function App() {
           <WhyChooseUs />
           <PricingPlan />
           <Testimonial />
-          {/* <Contact /> */}
+          <Contact />
           <Footer />
         </div>
       </main>

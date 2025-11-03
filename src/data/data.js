@@ -1,11 +1,3 @@
-export const navLinks = [
-    { label: "Home", href: "#home" },
-    { label: "About Us", href: "#about" },
-    { label: "Our Courses", href: "#courses" },
-    { label: "Our Pricings", href: "#pricing" },
-    { label: "Testimonials", href: "#testimonial" },
-  ];
-
 import {
   Target,
   Award,
@@ -22,8 +14,17 @@ import {
   Trophy,
   DollarSignIcon,
   Star,
+  Mail,
 } from "lucide-react";
 
+export const navLinks = [
+  { label: "Home", href: "#home" },
+  { label: "About Us", href: "#about" },
+  { label: "Our Courses", href: "#courses" },
+  { label: "Our Pricings", href: "#pricing" },
+  { label: "Testimonials", href: "#testimonial" },
+  { label: "Testimonials", href: "#contact" },
+];
 export const feature = [
   {
     icon: Target,
@@ -219,7 +220,7 @@ export const pricing = [
       to: "to-indigo-600",
     },
     icon: DollarSignIcon,
-    cost: 10000,
+    cost: "10,000",
     duration: "3-6 months recommended",
     popular: false,
     features: [
@@ -239,49 +240,14 @@ export const pricing = [
   },
 ];
 
-export const testimonials = [
+export const contactInfo = [
   {
-    id: 1,
-    name: "Dr. Adebayo Ademola",
-    credential: "Step 2 CK - Score 260",
-    location: "Lagos, Nigeria → Internal Medicine Residency, Texas",
-    image: "/hero image 1.png",
-    quote:
-      "Precision USMLE Tutors was instrumental in my Step 2 CK success. As a Nigerian graduate, I struggled to understand the clinical reasoning approach required for USMLE. My tutor didn't just teach me medicine—they taught me how to think like American physicians. The personalized study plan fit perfectly around my clinical rotations, and the question bank strategies were game-changing. I scored 260 and matched to my dream residency program!",
-    rating: 5,
-    icon: Star,
-  },
-  {
-    id: 2,
-    name: "Dr. Nafisat Ibrahim",
-    credential: "Step 1 - Score 245",
-    location: "Abuja, Nigeria → Family Medicine Residency, New York",
-    image: "/hero image2.png",
-    quote:
-      "I was overwhelmed by the volume of Step 1 material until I started working with Precision USMLE Tutors. They helped me prioritize high-yield topics and develop an efficient study system. The tutors understood exactly where my Nigerian medical education left gaps and focused our sessions there. Their support went beyond academics—they mentored me through the entire ECFMG process and residency applications.",
-    rating: 5,
-    icon: Star,
-  },
-  {
-    id: 3,
-    name: "Dr. Gladys Munachisom",
-    credential: "Step 3 - First Attempt Pass",
-    location: "Port Harcourt → Emergency Medicine Residency, California",
-    image: "/images/testimonials/chidinma.jpg",
-    quote:
-      "After passing Step 1 and 2 CK, I was nervous about Step 3, especially the CCS cases. Precision USMLE Tutors provided excellent preparation for the clinical simulations and multiday exam format. Their tutor was a practicing physician who shared practical insights that went beyond study materials. I passed on my first attempt and felt confident throughout the entire exam.",
-    rating: 5,
-    icon: Star,
-  },
-  {
-    id: 4,
-    name: "Oluwatomisin Abayomi",
-    credential: "Step 1 & 2 CK Pass",
-    location: "Ibadan → Applying for 2026 Match",
-    image: "/images/testimonials/tosin.jpg",
-    quote:
-      "Finding quality USMLE tutoring in Nigeria seemed impossible until I discovered Precision USMLE Tutors. The online sessions were convenient, the tutors were knowledgeable and patient, and the study materials were comprehensive. They've supported me through both Step 1 and Step 2 CK, and now they're helping me with my residency applications. Highly recommended!",
-    rating: 5,
-    icon: Star,
+    icon: Mail,
+    title: "Contact Information",
+    subTitle: "Email Us",
+    email: [
+      "info@precisionusmletutors.com",
+      "support@precisionusmletutors.com",
+    ],
   },
 ];

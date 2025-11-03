@@ -13,7 +13,7 @@ import { Star } from "lucide-react";
 const testimonials = [
   {
     id: 1,
-    name: "Doc. Gbenga Ademola",
+    name: "Dr. Gbenga Ademola",
     credential: "Step 2 CK - Score 260",
     location: "Lagos, Nigeria → Internal Medicine Residency, Texas",
     image: gbenga,
@@ -24,7 +24,7 @@ const testimonials = [
   },
   {
     id: 2,
-    name: "Doc. Amirat Salami",
+    name: "Dr. Amirat Salami",
     credential: "Step 1 - Score 245",
     location: "Abuja, Nigeria → Family Medicine Residency, New York",
     image: Amirat,
@@ -35,7 +35,7 @@ const testimonials = [
   },
   {
     id: 3,
-    name: "Doc. David Otega",
+    name: "Dr. David Otega",
     credential: "Step 3 - First Attempt Pass",
     location: "Port Harcourt → Emergency Medicine Residency, California",
     image: "/David Otega.png",
@@ -46,7 +46,7 @@ const testimonials = [
   },
   {
     id: 4,
-    name: "Doc. Rachel Uche David",
+    name: "Dr. Rachel Uche David",
     credential: "Step 1 & 2 CK Pass",
     location: "Ibadan → Applying for 2026 Match",
     image: "/Rachel Uche David.png",

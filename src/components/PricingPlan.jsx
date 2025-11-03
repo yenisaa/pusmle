@@ -29,7 +29,7 @@ function PricingPlan() {
                     {price.name}
                   </h3>
                   <p className="text-gray-600 text-lg text-center mb-4 pb-3 border-b-2 border-gray-100">{price.tagline}</p>
-                  <h2 className="flex text-6xl font-bold text-blue-600 items-center mb-4 pb-3 border-b-2 border-gray-100">
+                  <h2 className="flex text-6xl font-bold text-gray-900 items-center mb-4 pb-3 border-b-2 border-gray-100">
                     <price.icon className=" size-12 " /> {price.cost}
                   </h2>
                 </div>
