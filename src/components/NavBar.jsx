@@ -1,18 +1,14 @@
 import { useState } from "react";
 import Logo from "/logo.png";
 import { HiMenu, HiX } from "react-icons/hi";
+import { navLinks } from "../data/data";
 
 function NavBar() {
   // const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeLink, setActiveLink] = useState("#Home");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const navLinks = [
-    { label: "Home", href: "#home" },
-    { label: "About Us", href: "#about" },
-    { label: "Our Courses", href: "#courses" },
-    { label: "Blog", href: "#blog" },
-  ];
+  
 
   return (
     <nav className="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-sm border-b border-gray-100 shadow-sm z-50">

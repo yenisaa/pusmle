@@ -1,3 +1,11 @@
+export const navLinks = [
+    { label: "Home", href: "#home" },
+    { label: "About Us", href: "#about" },
+    { label: "Our Courses", href: "#courses" },
+    { label: "Our Pricings", href: "#pricing" },
+    { label: "Testimonials", href: "#testimonial" },
+  ];
+
 import {
   Target,
   Award,

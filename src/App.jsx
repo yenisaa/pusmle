@@ -1,5 +1,6 @@
 import AboutUs from "./components/AboutUs.jsx";
 import FeatureSection from "./components/FeatureSection.jsx";
+import Footer from "./components/Footer.jsx";
 import Hero from "./components/Hero.jsx";
 import NavBar from "./components/NavBar.jsx";
 import PricingPlan from "./components/PricingPlan.jsx";
@@ -19,6 +20,7 @@ function App() {
           <WhyChooseUs />
           <PricingPlan />
           <Testimonial />
+          <Footer />
         </div>
       </main>
     </>

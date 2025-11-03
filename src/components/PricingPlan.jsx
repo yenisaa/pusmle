@@ -3,7 +3,7 @@ import { CircleArrowRight } from "lucide-react";
 
 function PricingPlan() {
   return (
-    <section className=" mx-auto px-4 py-2  mb-16 bg-white max-w-7xl" id="pricing">
+    <section className=" mx-auto px-4 py-2  mb-16 bg-white max-w-7xl"  id='pricing'>
       <div className="flex flex-col items-center justify-center">
           <h2 className=" text-4xl max-w-md font-bold text-center text-gray-900 my-8 h-5xl">
             Our <span className="bg-linear-to-r from-red-600 to-blue-600 bg-clip-text text-transparent">Pricing</span>
