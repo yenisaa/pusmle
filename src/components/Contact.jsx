@@ -8,7 +8,7 @@ function Contact() {
   };
 
   return (
-    <section className="max-w-7xl py-4 px-6 md:px-16  mx-auto" id="contact">
+    <section className="max-w-7xl py-2 px-6 md:px-16  mx-auto" id="contact">
       {/* Contact Header Section  */}
       <div className="mb-8">
         <h2 className="text-center text-4xl font-bold text-gray-900">
@@ -38,13 +38,13 @@ function Contact() {
                   <h4 className="text-lg text-gray-900 font-bold mb-2">
                     {contact.subTitle}
                   </h4>
-                  <p className="text-lg">
+                  <div className="text-lg">
                     {contact.email.map((mail, index) => (
                       <p className=" text-blue-600" key={index}>
                         {mail}
                       </p>
                     ))}
-                  </p>
+                  </div>
                 </div>
               </div>
             </div>

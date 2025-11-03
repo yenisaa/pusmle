@@ -2,14 +2,12 @@ import { useState } from "react";
 import Logo from "/logo.png";
 import { HiMenu, HiX } from "react-icons/hi";
 import { navLinks } from "../data/data";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   // const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeLink, setActiveLink] = useState("#Home");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
- 
-  
 
   return (
     <nav className="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-sm border-b border-gray-100 shadow-sm z-50">
@@ -59,11 +57,11 @@ function NavBar() {
 
         {/* Call To Action Button */}
         <div className="hidden md:block">
-          
+          <a href="#contact">
             <button className=" bg-linear-to-r from-red-600 to-blue-600 text-white px-6 py-2.5 rounded-lg hover:shadow-md hover:shadow-red-200 md:hover:bg-blue-700 transition-all ">
               Get In Touch
             </button>
-   
+          </a>
         </div>
       </div>
 
@@ -89,9 +87,11 @@ function NavBar() {
                 </a>
               ))}
               {/* Call To Action Button */}
-              <button className=" md:hidden w-full bg-blue-600 text-white px-6 py-2.5 rounded-lg hover:shadow-md hover:shadow-blue-200 md:hover:bg-blue-700 transition-all ">
-                Get In Touch
-              </button>
+              <a href="#contact">
+                <button className=" md:hidden w-full bg-blue-600 text-white px-6 py-2.5 rounded-lg hover:shadow-md hover:shadow-blue-200 md:hover:bg-blue-700 transition-all ">
+                  Get In Touch
+                </button>
+              </a>
               <div className=""></div>
             </div>
           </div>

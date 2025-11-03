@@ -23,7 +23,6 @@ export const navLinks = [
   { label: "Our Courses", href: "#courses" },
   { label: "Our Pricings", href: "#pricing" },
   { label: "Testimonials", href: "#testimonial" },
-  { label: "Testimonials", href: "#contact" },
 ];
 export const feature = [
   {

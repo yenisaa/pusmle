@@ -38,13 +38,15 @@ function Hero() {
           </p>
         </div>
         {/* Action Buttons */}
-        <div className="flex flex-col md:flex-row gap-3">
-          <button className="bg-linear-to-r from-red-600 to-blue-600 text-white px-6 py-2.5  rounded-lg hover:shadow-md hover:shadow-red-200 md:hover:bg-blue-700 transition-all cursor-pointer flex items-center justify-center gap-2">
-            Start Your Free Consultation <PhoneCall className="flex size-4" />
-          </button>
-          <button className="border-gray-300 border text-gray-900 font px-6 py-2.5 rounded-lg hover:shadow-md hover:shadow-red-200  transition-all cursor-pointer flex items-center justify-center gap-2">
-            Explore Programs <ArrowRightCircle className="flex size-4" />
-          </button>
+        <div >
+          <a href="#contact" className="flex flex-col md:flex-row gap-3">
+            <button className="bg-linear-to-r from-red-600 to-blue-600 text-white px-6 py-2.5  rounded-lg hover:shadow-md hover:shadow-red-200 md:hover:bg-blue-700 transition-all cursor-pointer flex items-center justify-center gap-2">
+              Start Your Free Consultation <PhoneCall className="flex size-4" />
+            </button>
+            <button className="border-gray-300 border text-gray-900 font px-6 py-2.5 rounded-lg hover:shadow-md hover:shadow-red-200  transition-all cursor-pointer flex items-center justify-center gap-2">
+              Explore Programs <ArrowRightCircle className="flex size-4" />
+            </button>
+          </a>
         </div>
       </div>
 

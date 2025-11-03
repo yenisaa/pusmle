@@ -39,9 +39,11 @@ function WhyChooseUs() {
         </div>
         {/* Button  */}
         <div className="flex items-center justify-center w-full mt-8">
-          <button className="bg-blue-600 text-white cursor-pointer px-10 py-3 rounded-full font-medium hover:bg-blue-700 transition-colors relative flex items-center gap-3">
-            Start Your Free Consultation <PhoneCall className="flex size-4" />
-          </button>
+          <a href="#contact">
+            <button className="bg-blue-600 text-white cursor-pointer px-10 py-3 rounded-full font-medium hover:bg-blue-700 transition-colors relative flex items-center gap-3">
+              Start Your Free Consultation <PhoneCall className="flex size-4" />
+            </button>
+          </a>
         </div>
       </div>
     </section>
