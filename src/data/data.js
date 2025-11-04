@@ -13,7 +13,6 @@ import {
   Rocket,
   Trophy,
   DollarSignIcon,
-  Star,
   Mail,
 } from "lucide-react";
 

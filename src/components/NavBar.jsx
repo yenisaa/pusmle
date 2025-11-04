@@ -2,7 +2,6 @@ import { useState } from "react";
 import Logo from "/logo.png";
 import { HiMenu, HiX } from "react-icons/hi";
 import { navLinks } from "../data/data";
-import { Link } from "react-router-dom";
 
 function NavBar() {
   // const [isMenuOpen, setIsMenuOpen] = useState(false);
