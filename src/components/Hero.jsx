@@ -6,7 +6,7 @@ import { PhoneCall } from "lucide-react";
 function Hero() {
   return (
     <section
-      className="container flex flex-col md:flex-row justify-between pt-44 mx-auto pb-6 px-4 sm:px-6 lg:px-8"
+      className="overflow-x-hidden container flex flex-col md:flex-row justify-between pt-44 mx-auto pb-6 px-4 sm:px-6 lg:px-8"
       id="home"
     >
       {/* Left Col */}
@@ -38,7 +38,7 @@ function Hero() {
           </p>
         </div>
         {/* Action Buttons */}
-        <div >
+        <div>
           <a href="#contact" className="flex flex-col md:flex-row gap-3">
             <button className="bg-linear-to-r from-red-600 to-blue-600 text-white px-6 py-2.5  rounded-lg hover:shadow-md hover:shadow-red-200 md:hover:bg-blue-700 transition-all cursor-pointer flex items-center justify-center gap-2">
               Start Your Free Consultation <PhoneCall className="flex size-4" />
@@ -49,10 +49,9 @@ function Hero() {
           </a>
         </div>
       </div>
-
       {/*  Right Col */}
       <div className="w-full flex flex-col items-center justify-center md:w-1/2 space-y-8 mt-16 md:mt-0 pl-0 md:pl-12 ">
-        <div className="w-md relative">
+        <div className="w-md relative overflow-hidden rounded-lg">
           <img
             src={heroImage}
             alt="hero image"

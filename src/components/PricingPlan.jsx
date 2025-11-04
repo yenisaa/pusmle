@@ -47,7 +47,7 @@ function PricingPlan() {
                     <li className="">
                       {price.features.map((feature, index) => (
                         <ul key={index} className="list-disc list-inside ">
-                          <li className="text-gray-600">{feature}</li>
+                          <li className="text-gray-600 text-left">{feature}</li>
                         </ul>
                       ))}
                     </li>
