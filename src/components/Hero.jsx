@@ -1,4 +1,4 @@
-import heroImage from "/hero-image.png";
+import heroImage from "/Hero-lmage.png";
 import { HiStar } from "react-icons/hi2";
 import { ArrowRightCircle } from "lucide-react";
 import { PhoneCall } from "lucide-react";
