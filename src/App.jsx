@@ -7,6 +7,7 @@ import StepTwo from './components/StepTwo'
 import StepThree from './components/StepThree'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import PricePage from "./pages/PricePage";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
           <Route path="/step-1" element={<StepOne />} />
           <Route path="/step-2" element={<StepTwo />} />
           <Route path="/step-3" element={<StepThree />} />
-       
+
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </main>
