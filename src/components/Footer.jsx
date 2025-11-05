@@ -3,7 +3,7 @@ import Logo from "/logo.png";
 
 function Footer() {
   return (
-    <section className="bg-gray-50 w-full mx-auto px-4 py-2 ">
+    <section className="bg-gray-50 w-full mx-auto px-4 py-2 overflow-hidden">
       <div className=" px-4 sm:px-6 lg:px-8 py-16 flex flex-col md:flex-row items-center justify-center gap-8">
         <div className="w-full flex flex-col gap-8 items-center justify-center ">
           {/* Brand Info Colum  */}

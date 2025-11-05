@@ -1,9 +1,10 @@
 import { PhoneCall } from "lucide-react";
 import { differentiators } from "../data/data";
+import { Link } from "react-router-dom";
 
 function WhyChooseUs() {
   return (
-    <section className="w-full mx-auto px-4 py-16 bg-gray-50 flex flex-col items-center justify-center">
+    <section className="w-full mx-auto px-4 py-16 bg-gray-50 flex flex-col items-center justify-center overflow-hidden">
       <div className="max-w-7xl">
         {/* heading section  */}
         <div className="text-center mb-12 max-w-7xl">
@@ -39,11 +40,11 @@ function WhyChooseUs() {
         </div>
         {/* Button  */}
         <div className="flex items-center justify-center w-full mt-8">
-          <a href="#contact">
+          <Link to="/contact">
             <button className="bg-blue-600 text-white cursor-pointer px-10 py-3 rounded-full font-medium hover:bg-blue-700 transition-colors relative flex items-center gap-3">
               Start Your Free Consultation <PhoneCall className="flex size-4" />
             </button>
-          </a>
+          </Link>
         </div>
       </div>
     </section>
@@ -52,25 +53,3 @@ function WhyChooseUs() {
 
 export default WhyChooseUs;
 
-{
-  /* <div className="col-span-2 grid grid-cols-1 md:grid-cols-4 justify-between gap-2 ">
-          {stats.map((stat, index) => (
-            <div
-              key={index}
-              className="w-full flex flex-col md:flex-row items-center"
-            >
-              <div className="flex flex-col md:flex-row justify-center gap-2 ">
-                <div className="flex items-center  justify-center bg-blue-600/10 w-20 h-20 rounded-2xl">
-                  <stat.icon className=" text-blue-600" />
-                </div>
-                <div className="flex flex-col gap-2">
-                  <div className="text-3xl font-bold text-gray-900">
-                    {stat.value}
-                  </div>
-                  <div className="w-full">{stat.label}</div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div> */
-}

@@ -2,10 +2,11 @@ import { useState } from "react";
 import Logo from "/logo.png";
 import { HiMenu, HiX } from "react-icons/hi";
 import { navLinks } from "../data/data";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   // const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState("#Home");
+  const [activeLink, setActiveLink] = useState("Home");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -38,9 +39,9 @@ function NavBar() {
         >
           <ul className="flex  gap-10">
             {navLinks.map((link, indexed) => (
-              <a
+              <Link
                 key={indexed}
-                href={link.href}
+                to={link.href}
                 className={`text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full ${
                   activeLink === link.href
                     ? "text-blue-600 after:w-full"
@@ -49,18 +50,18 @@ function NavBar() {
                 onClick={() => setActiveLink(link.href)}
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </ul>
         </div>
 
         {/* Call To Action Button */}
         <div className="hidden md:block">
-          <a href="#contact">
+          <Link to="/contact">
             <button className=" bg-linear-to-r from-red-600 to-blue-600 text-white px-6 py-2.5 rounded-lg hover:shadow-md hover:shadow-red-200 md:hover:bg-blue-700 transition-all ">
               Get In Touch
             </button>
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -86,11 +87,11 @@ function NavBar() {
                 </a>
               ))}
               {/* Call To Action Button */}
-              <a href="#contact">
+              <Link to="/contact">
                 <button className=" md:hidden w-full bg-blue-600 text-white px-6 py-2.5 rounded-lg hover:shadow-md hover:shadow-blue-200 md:hover:bg-blue-700 transition-all ">
                   Get In Touch
                 </button>
-              </a>
+              </Link>
               <div className=""></div>
             </div>
           </div>

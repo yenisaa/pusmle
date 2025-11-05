@@ -59,7 +59,7 @@ const testimonials = [
 
 function Testimonial() {
   return (
-    <section className="py-16 p-4 max-w-7xl mx-auto" id="testimonial">
+    <section className="py-16 p-4 max-w-7xl mx-auto overflow-hidden" id="testimonial">
       <div className="">
         <p className="text-sm text-center font-medium uppercase text-blue-600">
           Success Stories

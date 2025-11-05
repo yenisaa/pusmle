@@ -1,31 +1,30 @@
-import AboutUs from "./components/AboutUs.jsx";
-import Contact from "./components/Contact.jsx";
-import FeatureSection from "./components/FeatureSection.jsx";
-import Footer from "./components/Footer.jsx";
-import Hero from "./components/Hero.jsx";
-import NavBar from "./components/NavBar.jsx";
-import PricingPlan from "./components/PricingPlan.jsx";
-import Testimonial from "./components/Testimonial.jsx";
-import WhyChooseUs from "./components/WhyChooseUs.jsx";
+import AboutPage from "./pages/AboutPage";
+import ContactPage from "./pages/ContactPage";
+import HomePage from "./pages/HomePage";
+import Packages from "./pages/PackagesPage";
+import StepOne from './components/StepOne'
+import StepTwo from './components/StepTwo'
+import StepThree from './components/StepThree'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import PricePage from "./pages/PricePage";
 
 function App() {
   return (
-    <>
-      <main className="relative min-w-screen overflow-x-hidden ">
-        <div className="absolute -top-28 -left-28 w-[400px] h-[400px] bg-linear-to-r from-indigo-500/20 to-pink-500/20 rounded-full -z-10 blur-[80px]"></div>
-        <div className="overflow-hidden">
-          <NavBar />
-          <Hero />
-          <AboutUs />
-          <FeatureSection />
-          <WhyChooseUs />
-          <PricingPlan />
-          <Testimonial />
-          <Contact />
-          <Footer />
-        </div>
-      </main>
-    </>
+    <main className="relative min-w-screen overflow-x-hidden ">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/courses" element={<Packages />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/pricing" element={<PricePage />} />
+          <Route path="/step-1" element={<StepOne />} />
+          <Route path="/step-2" element={<StepTwo />} />
+          <Route path="/step-3" element={<StepThree />} />
+       
+        </Routes>
+      </BrowserRouter>
+    </main>
   );
 }
 

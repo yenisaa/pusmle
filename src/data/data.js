@@ -1,3 +1,6 @@
+import { Medal } from "lucide-react";
+import { Gem } from "lucide-react";
+import { Star } from "lucide-react";
 import {
   Target,
   Award,
@@ -17,11 +20,10 @@ import {
 } from "lucide-react";
 
 export const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "About Us", href: "#about" },
-  { label: "Our Courses", href: "#courses" },
-  { label: "Our Pricings", href: "#pricing" },
-  { label: "Testimonials", href: "#testimonial" },
+  { label: "Home", href: "/" },
+  { label: "About Us", href: "/about" },
+  { label: "Our Study Plans", href: "/courses" },
+  { label: "Our Pricings", href: "/pricing" },
 ];
 export const feature = [
   {
@@ -81,6 +83,8 @@ export const programs = [
       from: "from-blue-600",
       to: "to-indigo-600",
     },
+    link: "/step-1",
+    linkText: "Learn more",
   },
   {
     title: "USMLE Step 2 CK",
@@ -96,6 +100,8 @@ export const programs = [
       from: "from-purple-600",
       to: "to-pink-600",
     },
+    link: "/step-2",
+    linkText: "Learn more",
   },
   {
     title: "USMLE Step 3",
@@ -112,6 +118,8 @@ export const programs = [
       from: "from-orange-600",
       to: "to-red-600",
     },
+    link: "/step-3",
+    linkText: "Learn more",
   },
 ];
 
@@ -162,9 +170,9 @@ export const differentiators = [
 
 export const pricing = [
   {
-    id: "bronze",
-    name: "Bronze Package",
-    tagline: "Best for students starting USMLE preparation",
+    id: "step1",
+    name: "USMLE Step 1 bundle",
+    tagline: "Bronze bundle",
     color: {
       from: "from-blue-600",
       to: "to-indigo-600",
@@ -179,36 +187,33 @@ export const pricing = [
       "Online Skype Sessions only",
       "Covers ALL General Principles and systemic disorders",
     ],
-    ctaText: "Start Foundation Package",
-    ctaLink: "/contact",
+    ctaText: "View more bundles",
+    ctaLink: "/bundles",
   },
   {
-    id: "silver",
-    name: "Silver Package",
-    tagline: "Best for students with 2-4 months until exam",
-    color: {
-      from: "from-blue-600",
-      to: "to-indigo-600",
-    },
+    id: "step2",
+    name: "USMLE Step 2 CK bundle",
+    tagline: "Bronze bundle ",
+    from: "from-blue-600",
+    to: "to-indigo-600",
+
     icon: DollarSignIcon,
     cost: 5000,
     duration: "12 to 14 weeks recommended",
     popular: true,
     features: [
-      "12 to 14 weeks duration",
-      "12 hours minimum/week",
+      " 12 to 14 weeks duration",
+      "10 hours minimum/week",
       "Online Skype Sessions only",
       "Covers ALL Internal Medicine and HIGH-YIELD concepts only in Pediatrics, Surgery, Obstetrics & Gynecology",
-      "Weekly drills session and practice vignette.",
-      "Algorithm drills",
     ],
-    ctaText: "Choose Accelerated Package",
-    ctaLink: "/contact",
+    ctaText: "View more bundles",
+    ctaLink: "/bundles",
   },
   {
-    id: "premium",
-    name: "Premium Package",
-    tagline: "Best for students seeking maximum support and highest scores",
+    id: "step 3",
+    name: "USMLE Step 3 bundle",
+    tagline: "Bronze Bundle",
     color: {
       from: "from-blue-600",
       to: "to-indigo-600",
@@ -218,18 +223,15 @@ export const pricing = [
     duration: "16 weeks recommended",
     popular: false,
     features: [
-      "16 weeks duration",
-      "14 hours minimum/week",
-      "Online Skype Sessions, however, LIVE sessions can also be arranged",
-      "Covers ALL Internal Medicine and HIGH-YIELD concepts only in Pediatrics, Surgery, Obstetrics & Gynecology, Emergency Medicine",
+      "12 to 14 weeks duration",
+      "10 hours minimum/week",
+      "Online Skype Sessions only",
+      "Covers ALL Internal Medicine and HIGH-YIELD concepts only in Pediatrics, Surgery, Obstetrics & Gynecology, Emergency Medicine, Preventive Medicine, and Dermatology",
       "Preventive Medicine, Dermatology, Biostat & Epidemiology, and Ethics",
-      "Weekly drills session and practice vignette.",
-      "Test-taking strategy sessions",
-      "UWORLD/NBME review with Instructor",
-      "Weekly CCS Drills (3x)",
+      "Weekly CCS Drills (1x).",
     ],
-    ctaText: "Get Premium Package",
-    ctaLink: "/contact",
+    ctaText: "View more bundles",
+    ctaLink: "/bundles",
   },
 ];
 
@@ -241,6 +243,186 @@ export const contactInfo = [
     email: [
       "info@precisionusmletutors.com",
       "support@precisionusmletutors.com",
+    ],
+  },
+  // {
+  //   icon: MapPinIcon,
+  //   title: '',
+  //   subTitle: 'Address',
+  //   Address: '1751 W Howard St. Chicago, IL 60626'
+  // }
+];
+
+export const stepOne = [
+  {
+    icon: Medal,
+    title: "USMLE Step 1 bundle",
+    fee: "$1,000",
+    subTitle: "Bronze Bundle",
+    features: [
+      "12 to 14 weeks duration",
+      "10 hours minimum/week",
+      "Online Skype Sessions only",
+      "Covers ALL General Principles and systemic disorders",
+    ],
+  },
+  {
+    icon: Star,
+    title: "USMLE Step 1 bundle",
+    subTitle: "Silver Bundle",
+    fee: "$1,000",
+    features: [
+      "12 to 14 weeks duration",
+      "12 hours minimum/week",
+      "Online Skype Sessions only",
+      "Covers ALL General Principles and systemic disorders",
+      "Quick drill sessions",
+    ],
+  },
+  {
+    icon: Trophy,
+    title: "USMLE Step 1 bundle",
+    subTitle: "Gold Bundle",
+    fee: "$1,000",
+    features: [
+      "16 weeks duration",
+      "14 hours minimum/week",
+      "Online Skype Sessions only",
+      "Covers ALL General Principles and Systemic disorders",
+      "Pharm Drills",
+      "Diagnostic Lab drills",
+      "Test-taking strategy sessions",
+      "UWORLD review with Instructor",
+    ],
+  },
+  {
+    icon: Gem,
+    title: "USMLE Step 1 bundle",
+    subTitle: "Platinum Bundle",
+    fee: "$1,000",
+    features: [
+      "20–24 weeks duration",
+      "16-20 hours minimum/week",
+      "Online Skype Sessions and LIVE sessions, if feasible for student",
+      "Covers ALL General Principles and Systemic disorders",
+      "Pharm Drills",
+      "Diagnostic Lab drills",
+      "Test-taking strategy sessions",
+      "UWORLD review with Instructor",
+      "NBME review with Instructor",
+      "Flexibility of this package comes with support summary notes for pertinent concepts",
+    ],
+  },
+];
+
+export const stepTwo = [
+  {
+    icon: Medal,
+    title: "USMLE Step 2 CK bundle",
+    fee: "$3,000",
+    subTitle: "Bronze Bundle",
+    features: [
+      "12 to 14 weeks duration",
+      "10 hours minimum/week",
+      "Online Skype Sessions only",
+      "Covers ALL Internal Medicine and HIGH-YIELD concepts only in Pediatrics, Surgery, Obstetrics & Gynecology",
+    ],
+  },
+  {
+    icon: Star,
+    title: "USMLE Step 2 CK bundle",
+    fee: "$3,000",
+    subTitle: "Silver Bundle",
+    features: [
+      "12 to 14 weeks duration",
+      "12 hours minimum/week",
+      "Online Skype Sessions only",
+      "Covers ALL Internal Medicine and HIGH-YIELD concepts only in Pediatrics, Surgery, Obstetrics & Gynecology",
+      "Algorithm drills",
+      "Weekly drills session and practice vignette.",
+    ],
+  },
+  {
+    icon: Trophy,
+    title: "USMLE Step 2 CK bundle",
+    fee: "$3,000",
+    subTitle: "Gold Bundle",
+    features: [
+      "12 to 14 weeks duration",
+      "12 hours minimum/week",
+      "Online Skype Sessions only",
+      "Covers ALL Internal Medicine and HIGH-YIELD concepts only in Pediatrics, Surgery, Obstetrics & Gynecology",
+      "Algorithm drills",
+      "Weekly drills session and practice vignette.",
+      "Test-taking strategy sessions",
+      "UWORLD review with Instructor",
+    ],
+  },
+  {
+    icon: Gem,
+    title: "USMLE Step 2 CK bundle",
+    fee: "$3,000",
+    subTitle: "Platinum Bundle",
+    features: [
+      "NO Step 2 CK platinum bundle available. If a student is disciplined and focused, the maximum duration needed for Step 2 CK preparation ought not to exceed 16 weeks.",
+      "However, in extenuating circumstances, a student can liaise with the admin for flexible considerations.",
+    ],
+  },
+];
+
+export const stepThree = [
+  {
+    icon: Medal,
+    title: "USMLE Step 3 bundle",
+    fee: "$5,000",
+    subTitle: "Bronze Bundle",
+    features: [
+      "12 to 14 weeks duration",
+      "10 hours minimum/week",
+      "Online Skype Sessions only",
+      "Weekly CCS Drills (1x)",
+      "Covers ALL Internal Medicine and HIGH-YIELD concepts only in Pediatrics, Surgery, Obstetrics & Gynecology, Emergency Medicine, Preventive Medicine, and Dermatology",
+    ],
+  },
+  {
+    icon: Star,
+    title: "USMLE Step 3 bundle",
+    fee: "$5,000",
+    subTitle: "Silver Bundle",
+    features: [
+      "12 to 14 weeks duration",
+      "12 hours minimum/week",
+      "Online Skype Sessions only",
+      "Weekly CCS Drills (2x)",
+      "Covers ALL Internal Medicine and HIGH-YIELD concepts only in Pediatrics, Surgery, Obstetrics & Gynecology, Emergency Medicine, Preventive Medicine, Dermatology, and Ethics",
+    ],
+  },
+  {
+    icon: Trophy,
+    title: "USMLE Step 3 bundle",
+    fee: "$5,000",
+    subTitle: "Gold Bundle",
+    features: [
+      "16 weeks duration",
+      "14 hours minimum/week",
+      "Online Skype Sessions, however, LIVE sessions can also be arranged",
+      "Weekly CCS Drills (3x)",
+      "Covers ALL Internal Medicine and HIGH-YIELD concepts only in Pediatrics, Surgery, Obstetrics & Gynecology, Emergency Medicine",
+      "Weekly drills session and practice vignette.",
+      "Preventive Medicine, Dermatology, Biostat & Epidemiology, and Ethics",
+      "Test-taking strategy sessions",
+      "UWORLD/NBME review with Instructor",
+    ],
+  },
+  {
+    icon: Gem,
+    title: "USMLE Step 3 bundle",
+    fee: "$5,000",
+    subTitle: "Platinum Bundle",
+    features: [
+      "NO Step 3 platinum bundle available.",
+      "If a student is disciplined and focused, the maximum duration needed for Step 3 preparation ought not to exceed 16 weeks.",
+      " However, in extenuating circumstances, a student can liaise with the admin for flexible considerations.",
     ],
   },
 ];
