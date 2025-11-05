@@ -56,7 +56,7 @@ function Hero() {
           <img
             src={heroImage}
             alt="hero image"
-            className="rounded-lg relative z-10 hover:scale-[1.02] transition-transform duration-300"
+            className="rounded-lg relative z-10  animate-pulse transition-transform duration-300"
           />
         </div>
       </div>

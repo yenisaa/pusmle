@@ -24,7 +24,7 @@ function AboutUs() {
               <div key={index} className="   space-x-4">
                 <div className="flex gap-5 items-center ">
                   <div className="mb-2 shrink-0 w-12 h-12 bg-blue-600/10 rounded-xl flex items-center justify-center">
-                    {<features.icon className="text-blue-600 " />}
+                    {<features.icon className="text-blue-600 hover:animate-bounce " />}
                   </div>
                   <div className="text-xl font-semibold text-gray-900 mb-2">
                     {features.title}
