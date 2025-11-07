@@ -1,7 +1,9 @@
-import { Medal } from "lucide-react";
-import { Gem } from "lucide-react";
-import { Star } from "lucide-react";
+
+import { Settings } from "lucide-react";
 import {
+  Medal,
+  Gem,
+  Star,
   Target,
   Award,
   BookOpen,
@@ -66,6 +68,133 @@ export const stats = [
     icon: Award,
   },
 ];
+
+export const step1Bundle = [
+  {
+    icon: Medal,
+    title: "Bronze Fees",
+    fee: "$2,850",
+    paymentMethod: "(one-time payment)",
+    paymentRate:
+      "Naira Equivalent applicable based on Forex Rate at time of Transaction",
+    hourlyPayment: "@$20.36/hour",
+  },
+  {
+    title: "Silver Fees",
+    icon: Star,
+    fee: "$3,000",
+    paymentMethod: "(one-time payment)",
+    paymentRate:
+      "Naira Equivalent applicable based on Forex Rate at time of Transaction",
+    hourlyPayment: "@$17.86/hour",
+  },
+  {
+    icon: Trophy,
+    title: "Gold Fees",
+    fee: "$3,450",
+    paymentMethod: "(one-time payment)",
+    paymentRate:
+      "Naira Equivalent applicable based on Forex Rate at time of Transaction",
+    hourlyPayment: "@$15.4/hour",
+  },
+  {
+    icon: Gem,
+    title: "Platinum Fees",
+    fee: "$4,000",
+    paymentMethod: "(one-time payment)",
+    paymentRate:
+      "Naira Equivalent applicable based on Forex Rate at time of Transaction",
+    hourlyPayment: "@$8.33/hour",
+  },
+];
+
+export const step2Bundle = [
+  {
+    title: "Bronze Fees",
+    icon: Medal,
+    fee: "$2,750",
+    paymentMethod: "(one-time payment)",
+    paymentRate:
+      "Naira Equivalent applicable based on Forex Rate at time of Transaction",
+    hourlyPayment: "@$19.64/hour",
+  },
+  {
+    title: "Silver Fees",
+    icon: Star,
+    fee: "$2,900",
+    paymentMethod: "(one-time payment)",
+    paymentRate:
+      "Naira Equivalent applicable based on Forex Rate at time of Transaction",
+    hourlyPayment: "@$17.26/hour",
+  },
+  {
+    title: "Gold Fees",
+    icon: Trophy,
+    fee: "$3,550",
+    paymentMethod: "(one-time payment)",
+    paymentRate:
+      "Naira Equivalent applicable based on Forex Rate at time of Transaction",
+    hourlyPayment: "@$19.94/hour",
+  },
+  // {
+  //   title: "Platinum Fees - This package does not exist for Step 2 program",
+  //   icon: Gem,
+  //   fee: "",
+  //   paymentMethod: "",
+  //   paymentRate: "",
+  //   hourlyPayment: "",
+  // },
+];
+
+export const step3Bundle = [
+  {
+    title: "Bronze Fees",
+    icon: Medal,
+    fee: "$2,950",
+    paymentMethod: "(one-time payment)",
+    paymentRate:
+      "Naira Equivalent applicable based on Forex Rate at time of Transaction",
+    hourlyPayment: "@$21.1/hour",
+  },
+  {
+    title: "Silver Fees",
+    icon: Star,
+    fee: "$3,400",
+    paymentMethod: "(one-time payment)",
+    paymentRate:
+      "Naira Equivalent applicable based on Forex Rate at time of Transaction",
+    hourlyPayment: "@$20.24/hour",
+  },
+  {
+    title: "Gold Fees",
+    icon: Trophy,
+    fee: "$3,950",
+    paymentMethod: "(one-time payment)",
+    paymentRate:
+      "Naira Equivalent applicable based on Forex Rate at time of Transaction",
+    hourlyPayment: "@$17.63/hour",
+  },
+  // {
+  //   title: "Platinum Fees - This package does not exist for Step 3 program",
+  //   icon: Gem,
+  //   fee: "",
+  //   paymentMethod: "",
+  //   paymentRate: "",
+  //   hourlyPayment: "",
+  // },
+];
+
+export const ccsDrills = [
+  {
+    icon: Settings,
+    title: "CCS Drills",
+    commitment: "14 hour/week",
+    duration: "2 weeks duration",
+    Fee: "$700",
+    reviewFee: "(Case reviewing and progression training only",
+    assessmentFee: "$1,100 (CCS drills plus UWORLD CSS assessment review sessions",
+  },
+]
 
 export const programs = [
   {
@@ -257,7 +386,7 @@ export const stepOne = [
   {
     icon: Medal,
     title: "USMLE Step 1 bundle",
-    fee: "$1,000",
+    fee: "$2,850",
     subTitle: "Bronze Bundle",
     features: [
       "12 to 14 weeks duration",
@@ -270,7 +399,7 @@ export const stepOne = [
     icon: Star,
     title: "USMLE Step 1 bundle",
     subTitle: "Silver Bundle",
-    fee: "$1,000",
+    fee: "$3,000",
     features: [
       "12 to 14 weeks duration",
       "12 hours minimum/week",
@@ -283,7 +412,7 @@ export const stepOne = [
     icon: Trophy,
     title: "USMLE Step 1 bundle",
     subTitle: "Gold Bundle",
-    fee: "$1,000",
+    fee: "$3,450",
     features: [
       "16 weeks duration",
       "14 hours minimum/week",
@@ -299,7 +428,7 @@ export const stepOne = [
     icon: Gem,
     title: "USMLE Step 1 bundle",
     subTitle: "Platinum Bundle",
-    fee: "$1,000",
+    fee: "$4,000",
     features: [
       "20–24 weeks duration",
       "16-20 hours minimum/week",
@@ -319,7 +448,7 @@ export const stepTwo = [
   {
     icon: Medal,
     title: "USMLE Step 2 CK bundle",
-    fee: "$3,000",
+    fee: "$2,750",
     subTitle: "Bronze Bundle",
     features: [
       "12 to 14 weeks duration",
@@ -331,7 +460,7 @@ export const stepTwo = [
   {
     icon: Star,
     title: "USMLE Step 2 CK bundle",
-    fee: "$3,000",
+    fee: "$2,900",
     subTitle: "Silver Bundle",
     features: [
       "12 to 14 weeks duration",
@@ -345,7 +474,7 @@ export const stepTwo = [
   {
     icon: Trophy,
     title: "USMLE Step 2 CK bundle",
-    fee: "$3,000",
+    fee: "$3,350",
     subTitle: "Gold Bundle",
     features: [
       "12 to 14 weeks duration",
@@ -361,7 +490,7 @@ export const stepTwo = [
   {
     icon: Gem,
     title: "USMLE Step 2 CK bundle",
-    fee: "$3,000",
+    fee: "This package does not exist fot step 2 program",
     subTitle: "Platinum Bundle",
     features: [
       "NO Step 2 CK platinum bundle available. If a student is disciplined and focused, the maximum duration needed for Step 2 CK preparation ought not to exceed 16 weeks.",
@@ -374,7 +503,7 @@ export const stepThree = [
   {
     icon: Medal,
     title: "USMLE Step 3 bundle",
-    fee: "$5,000",
+    fee: "$2,980",
     subTitle: "Bronze Bundle",
     features: [
       "12 to 14 weeks duration",
@@ -387,7 +516,7 @@ export const stepThree = [
   {
     icon: Star,
     title: "USMLE Step 3 bundle",
-    fee: "$5,000",
+    fee: "$3,400",
     subTitle: "Silver Bundle",
     features: [
       "12 to 14 weeks duration",
@@ -400,7 +529,7 @@ export const stepThree = [
   {
     icon: Trophy,
     title: "USMLE Step 3 bundle",
-    fee: "$5,000",
+    fee: "$3,950",
     subTitle: "Gold Bundle",
     features: [
       "16 weeks duration",

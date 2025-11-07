@@ -28,7 +28,7 @@ function FeatureSection() {
           {programs.map((program, index) => (
             <div
               key={index}
-              className=" group hover:shadow-xl transition-all duration-500 hover:translate-y-2 relative bg-white rounded-xl overflow-hidden shadow-sm flex-1"
+              className="group hover:shadow-xl transition-all duration-500 hover:translate-y-2 relative bg-white rounded-xl overflow-hidden shadow-sm flex-1"
               style={{
                 animationDelay: `${index * 100}ms`,
               }}
