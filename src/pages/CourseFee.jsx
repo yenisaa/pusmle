@@ -13,15 +13,15 @@ function CourseFee() {
 
       {/*Step 1 Course Selection Section  */}
       <div className="max-w-7xl mx-auto">
-        <div className="mb-9 p-9">
+        <div className="mb-9 p-9 ">
           <h2 className="text-3xl font-bold text-center text-gray-600">
             Step 1 Bundles
           </h2>
         </div>
-        <div className="grid grid-cols-4 gap-9  ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
           {step1Bundle.map((bundle, index) => (
             <div
-              className="group hover:shadow-xl transition-all duration-500 hover:translate-y-2 relative bg-white rounded-xl overflow-hidden shadow-sm flex-1 p-5"
+              className="group hover:shadow-xl transition-all duration-500 hover:translate-y-2 relative bg-white rounded-xl overflow-hidden shadow-sm flex-1 p-5 "
               key={index}
             >
               {/* image div  */}
@@ -64,7 +64,7 @@ function CourseFee() {
             Step 2 CK Bundles
           </h2>
         </div>
-        <div className="grid grid-cols-3 gap-9  justify-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9  justify-items-center">
           {step2Bundle.map((bundle, index) => (
             <div
               className="group hover:shadow-xl transition-all duration-500 hover:translate-y-2 relative bg-white rounded-xl overflow-hidden shadow-sm flex-1 p-5"
@@ -109,7 +109,7 @@ function CourseFee() {
             Step 3 Bundles
           </h2>
         </div>
-        <div className="grid grid-cols-3 gap-9  justify-items-center ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9  justify-items-center ">
           {step3Bundle.map((bundle, index) => (
             <div
               className="group hover:shadow-xl transition-all duration-500 hover:translate-y-2 relative bg-white rounded-xl overflow-hidden shadow-sm flex-1 mb-8 p-5"
@@ -157,7 +157,7 @@ function CourseFee() {
             CCS Drills
           </h2>
         </div>
-        <div className="grid grid-cols-3 gap-9  justify-items-center ">
+        <div className="grid grid-cols-1 gap-9  justify-items-center ">
           {ccsDrills.map((drills, index) => (
             <div
               className="group hover:shadow-xl transition-all duration-500 hover:translate-y-2 relative bg-white rounded-xl overflow-hidden shadow-sm flex-1 mb-8 p-5"
